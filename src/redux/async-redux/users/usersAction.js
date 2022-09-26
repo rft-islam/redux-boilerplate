@@ -17,8 +17,6 @@ export const fetchUsersFailure = (errMsg) => {
     return { type: FETCH_USERS_ERROR, payload: errMsg };
 }
 
-
-//or do this using useEffect
 export const fetchUsers = () => {
     return (dispatch) => {
         dispatch(fetchUsersRequest());
